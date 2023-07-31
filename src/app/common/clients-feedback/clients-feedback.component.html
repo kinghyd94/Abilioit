@@ -1,0 +1,30 @@
+<section class="clients-feedback">
+  <div class="container">
+      <div class="clint-card text-center">
+          <div class="title">
+            <h1>Hear what our<br>
+              great customers say</h1>
+          </div>
+
+      </div>
+  </div>
+  <div>
+    <div class="slider-container">
+      <h3>Help us improve our productivity</h3>
+      <div class="slider">
+        <div class="owl-carousel">
+            <div class="slider-card" *ngFor="let item of sliderItems">
+              <p class="comment">{{item.commet}}</p>
+                <div class="d-flex justify-content-center align-items-center mb-4 img">
+                    <img src="{{item.clientImg}}" alt="">
+                </div>
+                  <h5 class="text-center">{{item.clientName}} </h5>
+                <p class="text-center">{{item.clientCompeny}}</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+  </div>
+</section>

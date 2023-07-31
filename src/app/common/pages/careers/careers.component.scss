@@ -1,0 +1,119 @@
+.career-banner {
+  margin-bottom: 90px;
+}
+.img-top {
+  width: 249.307px;
+  height: 204.676px;
+  flex-shrink: 0;
+}
+.img-bottom {
+  width: 322.079px;
+  height: 335.579px;
+  flex-shrink: 0;
+}
+// .img-right{
+//   width: 244.352px;
+// height: 623px;
+// flex-shrink: 0;
+// }
+
+.career-card {
+  width: 527px;
+
+  // p {
+  //   // margin-bottom: 50px;
+  // }
+  .join-us-item {
+    margin: 50px 0;
+    .join-us-btn {
+      display: inline-flex;
+      padding: 14px 50px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 50px;
+      background: #2b58d6;
+      color: #fff;
+    }
+  }
+}
+
+#work-with-us {
+  // padding-bottom: 41px;
+  position: relative;
+  animation: animateRectangle 800ms ease-in-out;
+  .work-with-us {
+    text-align: center;
+    p {
+      width: 474px;
+      margin: auto !important;
+      display: block;
+      text-align: center;
+      padding: 20px 0 40px;
+    }
+  }
+  .row {
+    // justify-content:space-;
+    .col {
+      // width: 426px;
+      width: 56vh;
+      height: 191px;
+      margin: 10px;
+      div {
+        padding: 20px 0 0;
+        h4 {
+          padding: 20px 0 30px;
+          color: #151f2d;
+          text-align: center;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+    .Remote {
+      border-radius: 20px;
+      background: #e6fff4;
+      margin-left: 0 !important;
+    }
+    .Flexible-Work {
+      border-radius: 20px;
+      background: #fff5e5;
+    }
+    .Paid-Health {
+      border-radius: 20px;
+      background: #e2eaff;
+      margin-right: 0 !important;
+    }
+    .Uncapped-Paid {
+      border-radius: 20px;
+      background: #ffe2df;
+      margin-left: 0 !important;
+    }
+    .Team-Retreats {
+      border-radius: 20px;
+      background: rgba(21, 31, 45, 0.1);
+    }
+    .Career-growth {
+      border-radius: 20px;
+      background: #ffebf5;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+@keyframes animateRectangle {
+  0% {
+    transform: translateX(0);
+  }
+  // 50% {
+  //   transform: translateX(200px);
+  // }
+  100% {
+    transform: translateX(0);
+  }
+}
+hr{
+  margin: 40px 0;
+}

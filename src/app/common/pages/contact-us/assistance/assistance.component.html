@@ -1,0 +1,118 @@
+<section class="assistance-section">
+  <div class="container">
+    <div class="assistance-card">
+      <div class="assistance-title text-cente">
+        <h2>Need more assistance?</h2>
+        <p class="r">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa
+          libero egestas malesuada viverra gravida libero cursus nulla leo.
+        </p>
+      </div>
+      <div class="assistance-body">
+        <div class="d-flex justify-content-between">
+          <div class="col">
+            <div class="sales-enquires-box">
+              <img
+                src="../../../../../assets/images/contact/sales-enquire.svg"
+                alt=""
+              />
+              <h3>Sales & Enquires</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut
+                massa libero egestas malesuada
+              </p>
+              <a href=""
+                >Sales@abilioit.com
+                <img
+                  src="../../../../../assets/images/contact/arrow-right.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="help-support-card">
+              <img
+                src="../../../../../assets/images/contact/help-&-support.svg"
+                alt=""
+              />
+              <h3>Help & Support</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut
+                massa libero egestas malesuada
+              </p>
+              <a href=""
+                >info@abilioit.com
+                <img
+                  src="../../../../../assets/images/contact/arrow-right.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="office-section">
+  <div class="container">
+    <hr class="featurette-divider" />
+    <div class="offices">
+      <h2>
+        Come and visit our <br />
+        offices around the world
+      </h2>
+      <!-- <button (click)="slickController.next()">Next</button>
+      <button (click)="slickController.prev()">Previous</button> -->
+      <div class="slider__controls">
+        <button
+          class="btn btn--previous"
+          title="Go to previous slide"
+          (click)="slickController.prev()"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"/></svg>
+        </button>
+        <button
+          class="btn btn--next"
+          title="Go to next slide"
+          (click)="slickController.next()"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div slickContainer #slickController="slick" [slickConfig]="config" class="pb-5">
+      <ng-container *ngIf="slickController.initialize">
+        <div slickItem *ngFor="let item of officeAddress">
+          <div class="slide-item">
+            <div class="box-img">
+              <img src="{{ item.boxImg }}" alt="" />
+            </div>
+            <div class="slide-titel">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.address }}</p>
+            </div>
+            <hr class="featurette-divider">
+            <div class="d-flex slide-body gap-5 ">
+              <div class="">
+                <img src="{{ item.emailIcon }}" alt="" />
+                <a href="">{{ item.emailId }}</a>
+              </div>
+              <div>
+                <img src="{{ item.phoneIcon }}" alt="" />
+                <a href="">{{ item.phoneNo }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </ng-container>
+    </div>
+    <!-- <button (click)="slickController.next()">Next</button>
+    <button (click)="slickController.prev()">Previous</button> -->
+  </div>
+
+</section>

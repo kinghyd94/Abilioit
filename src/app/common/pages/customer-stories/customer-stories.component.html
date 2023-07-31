@@ -1,0 +1,40 @@
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-title text-center">
+      <h1>We are proud to say</h1>
+      <p>
+        We take pride in serving our customers and helping them achieve their
+        goals. We have had the privilege of partnering with businesses from
+        various industries, and we would like to share their success stories
+        with you. Read on to learn how our products/services have made a
+        positive impact on their operations.
+      </p>
+    </div>
+    <div class="">
+      <div class="container">
+        <div class="grid">
+          <div class="item" *ngFor="let x of customerStories">
+            <div class="d-flex">
+              <div class="col-3">
+                <div class="customer-img">
+                  <img src="{{ x.customerImg }}" alt="" />
+                </div>
+              </div>
+              <div class="stories">
+                <h4 class="customer-name">{{ x.customerName }}</h4>
+                <img src="{{ x.rating }}" alt="" />
+                <div class="content">
+                  <p>
+                    <span class="owner-name">{{ x.ownerName }} </span>
+                    {{ x.comment }}
+                    <span class="ending-text">{{ x.endingText }}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

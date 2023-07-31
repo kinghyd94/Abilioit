@@ -1,0 +1,52 @@
+<section class="solution-card">
+  <!-- <div class="container"> -->
+    <div class="">
+      <div class="solution-item">
+        <h1>
+          High-impact solution <br />
+          for your business
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit et ut massa
+          libero egestas malesuada viverra gravida libero cursus nulla leo.
+        </p>
+      </div>
+
+    </div>
+  <!-- </div> -->
+  <div class="carousel">
+
+    <div
+      slickContainer
+      #slickController="slick"
+      [slickConfig]="config"
+      class="pb-5"
+      (afterChange)="onSlideChange($event)"
+    >
+      <ng-container *ngIf="slickController.initialize">
+        <div slickItem *ngFor="let item of slidesStore; let i = index">
+          <div
+            class="card border-primary mb-3 card-3"
+            style="max-width: 18rem"
+            [ngStyle]="{ 'background-color': getActiveSlideBackground(i) }"
+          >
+            <div class="card-header">
+              <img src="{{ item.cardImg }}" alt="" />
+            </div>
+            <div class="card-body text-primary">
+              <h5 class="card-title">{{ item.cardTitle }}</h5>
+              <p class="card-text">{{ item.cardText }}</p>
+            </div>
+            <div class="read-more">
+              <img src="{{ item.arrow }}" alt="" />
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="text-center">
+      <button class="explore-btn border-0" routerLink="services" (click)="scrollToTop()">Explore all solutions</button>
+    </div>
+  </div>
+</section>
+

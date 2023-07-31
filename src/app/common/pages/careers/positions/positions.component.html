@@ -1,0 +1,272 @@
+<div id="work" class="positions-area pt-100 pb-70">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Open Positions</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="positions-tabs">
+      <ngx-tabset>
+        <ngx-tab tabTitle="All">
+          <div class="row">
+            <div class="col" *ngFor="let item of positionsArea">
+              <div class="single-positions">
+                <img
+                  src="{{ item.imgIcon }}"
+                  alt="position-img"
+                  class="position-img"
+                />
+                <div
+                  class="positions-content align-items-center d-flex row-cols-2"
+                >
+                  <div class="col-8">
+                    <h3>{{ item.positionsTitel }}</h3>
+                    <ul>
+                      <li>
+                        <img src="{{ item.icon1 }}" alt="" /><span>
+                          {{ item.timing }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon2 }}" alt="" /><span>
+                          {{ item.experience }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon3 }}" alt="" />
+                        <span>{{ item.location }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="col-4">
+                    <img src="{{ item.arrow }}" alt="" />
+                  </button>
+                </div>
+                <div class="text">
+                  <p>{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-tab>
+        <ngx-tab tabTitle="Development">
+          <div class="row">
+            <div class="col" *ngFor="let item of positionsArea">
+              <div class="single-positions">
+                <img
+                  src="{{ item.imgIcon }}"
+                  alt="position-img"
+                  class="position-img"
+                />
+                <div
+                  class="positions-content align-items-center d-flex row-cols-2"
+                >
+                  <div class="col-8">
+                    <h3>{{ item.positionsTitel }}</h3>
+                    <ul>
+                      <li>
+                        <img src="{{ item.icon1 }}" alt="" /><span>
+                          {{ item.timing }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon2 }}" alt="" /><span>
+                          {{ item.experience }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon3 }}" alt="" />
+                        <span>{{ item.location }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="col-4">
+                    <img src="{{ item.arrow }}" alt="" />
+                  </button>
+                </div>
+                <div class="text">
+                  <p>{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-tab>
+        <ngx-tab tabTitle="Marketing">
+          <div class="row">
+            <div class="col" *ngFor="let item of positionsArea">
+              <div class="single-positions">
+                <img
+                  src="{{ item.imgIcon }}"
+                  alt="position-img"
+                  class="position-img"
+                />
+                <div
+                  class="positions-content align-items-center d-flex row-cols-2"
+                >
+                  <div class="col-8">
+                    <h3>{{ item.positionsTitel }}</h3>
+                    <ul>
+                      <li>
+                        <img src="{{ item.icon1 }}" alt="" /><span>
+                          {{ item.timing }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon2 }}" alt="" /><span>
+                          {{ item.experience }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon3 }}" alt="" />
+                        <span>{{ item.location }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="col-4">
+                    <img src="{{ item.arrow }}" alt="" />
+                  </button>
+                </div>
+                <div class="text">
+                  <p>{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-tab>
+        <ngx-tab tabTitle="Sales & Support">
+          <div class="row">
+            <div class="col" *ngFor="let item of positionsArea">
+              <div class="single-positions">
+                <img
+                  src="{{ item.imgIcon }}"
+                  alt="position-img"
+                  class="position-img"
+                />
+                <div
+                  class="positions-content align-items-center d-flex row-cols-2"
+                >
+                  <div class="col-8">
+                    <h3>{{ item.positionsTitel }}</h3>
+                    <ul>
+                      <li>
+                        <img src="{{ item.icon1 }}" alt="" /><span>
+                          {{ item.timing }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon2 }}" alt="" /><span>
+                          {{ item.experience }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon3 }}" alt="" />
+                        <span>{{ item.location }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="col-4">
+                    <img src="{{ item.arrow }}" alt="" />
+                  </button>
+                </div>
+                <div class="text">
+                  <p>{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-tab>
+        <ngx-tab tabTitle="Design">
+          <div class="row">
+            <div class="col" *ngFor="let item of positionsArea">
+              <div class="single-positions">
+                <img
+                  src="{{ item.imgIcon }}"
+                  alt="position-img"
+                  class="position-img"
+                />
+                <div
+                  class="positions-content align-items-center d-flex row-cols-2"
+                >
+                  <div class="col-8">
+                    <h3>{{ item.positionsTitel }}</h3>
+                    <ul>
+                      <li>
+                        <img src="{{ item.icon1 }}" alt="" /><span>
+                          {{ item.timing }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon2 }}" alt="" /><span>
+                          {{ item.experience }}</span
+                        >
+                      </li>
+                      <li>|</li>
+                      <li>
+                        <img src="{{ item.icon3 }}" alt="" />
+                        <span>{{ item.location }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="col-4">
+                    <img src="{{ item.arrow }}" alt="" />
+                  </button>
+                </div>
+                <div class="text">
+                  <p>{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ngx-tab>
+      </ngx-tabset>
+    </div>
+  </div>
+
+  <div class="for-info">
+    <dibv class="">
+        <div class="for-info-item container">
+          <div class="d-flex text-center">
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path d="M54.0235 29.736V17.736C54.0235 15.1899 53.0119 12.748 51.2117 10.9476C49.4114 9.14727 46.9694 8.13599 44.4235 8.13599H15.6234C13.0773 8.13599 10.6355 9.14727 8.83521 10.9476C7.03485 12.748 6.02344 15.1899 6.02344 17.736V41.736C6.02344 44.2821 7.03485 46.7236 8.83521 48.5241C10.6355 50.3244 13.0773 51.336 15.6234 51.336H30.0235" stroke="#2B58D6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M52.1014 13.0078C38.6374 38.5438 21.3576 38.5198 7.89355 13.0078" stroke="#2B58D6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M37.2236 44.136H56.4236" stroke="#2B58D6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.2236 36.936L56.4236 44.136L49.2236 51.336" stroke="#2B58D6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h4>Drop an us Mail</h4>
+              <a href="mailto:info@abilioit.com">info@abilioit.com</a>
+            </div>
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path d="M52.5 30H47.5C44.7386 30 42.5 32.2386 42.5 35V40C42.5 42.7614 44.7386 45 47.5 45C50.2614 45 52.5 42.7614 52.5 40V30ZM52.5 30C52.5 17.5736 42.4264 7.5 30 7.5C17.5736 7.5 7.5 17.5736 7.5 30M7.5 30V40C7.5 42.7614 9.73858 45 12.5 45C15.2614 45 17.5 42.7614 17.5 40V35C17.5 32.2386 15.2614 30 12.5 30H7.5Z" stroke="#FFA200" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M52.5 35V45C52.5 50 50.8333 52.5 47.5 52.5C44.1667 52.5 40 52.5 35 52.5" stroke="#FFA200" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h4>Enquiry</h4>
+              <a href="tel:040-40050678">040-40050678</a>
+
+            </div>
+            <div class="col">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                <path d="M6.09067 12.8671C5 14.1086 5 16.2372 5 20.4943V43.9775C5 46.9925 5 48.5 5.7865 49.635C6.57298 50.7697 7.94803 51.2465 10.6981 52.2L13.9336 53.3215C15.6859 53.9292 17.0343 54.3965 18.1658 54.6975C18.904 54.894 19.5833 54.3145 19.5833 53.5507V15.6752C19.5833 15.0529 19.1241 14.5278 18.5209 14.3748C17.5478 14.1279 16.3782 13.7224 14.775 13.1666C10.8919 11.8204 8.95035 11.1473 7.47305 11.8309C6.94852 12.0735 6.4779 12.4263 6.09067 12.8671Z" fill="#26D287"/>
+                <path d="M31.551 8.70238L27.711 11.3649C26.3218 12.3281 25.3038 13.034 24.4344 13.5373C24.0224 13.7758 23.75 14.2073 23.75 14.6833V52.3007C23.75 53.2272 24.71 53.8055 25.4905 53.3062C26.328 52.7705 27.2872 52.1055 28.449 51.2997L32.289 48.6372C33.678 47.6742 34.6962 46.9682 35.5655 46.465C35.9777 46.2265 36.25 45.795 36.25 45.319V7.70156C36.25 6.77509 35.29 6.19664 34.5095 6.69589C33.672 7.23176 32.7128 7.89683 31.551 8.70238Z" fill="#26D287"/>
+                <path d="M49.3022 7.80233L46.0667 6.68066C44.3142 6.07308 42.966 5.60571 41.8345 5.30468C41.0962 5.10833 40.417 5.68776 40.417 6.45161V44.327C40.417 44.9493 40.8762 45.4745 41.4792 45.6275C42.4525 45.8743 43.6222 46.2798 45.2252 46.8355C49.1082 48.1818 51.05 48.855 52.5272 48.1715C53.0517 47.9288 53.5222 47.576 53.9095 47.135C55.0002 45.8938 55.0002 43.765 55.0002 39.508V16.0247C55.0002 13.0098 55.0002 11.5023 54.2137 10.3674C53.4272 9.23245 52.0522 8.75576 49.3022 7.80233Z" fill="#26D287"/>
+              </svg>
+              <h4>Find Location</h4>
+              <a href="">Get direction</a>
+
+            </div>
+        </div>
+        </div>
+    </dibv>
+  </div>
+</div>
+

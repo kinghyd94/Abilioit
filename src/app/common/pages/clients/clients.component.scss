@@ -1,0 +1,178 @@
+// .track-2{
+//   margin: 10rem 0;
+// }
+//   .marquee1 {
+//     position: relative;
+//     width: 100vw;
+//     max-width: 100%;
+//     height: 190px;
+//     overflow-x: hidden;
+//     margin-bottom: 1rem;
+//     .left {
+//       position: absolute;
+//       /* padding: 2rem 0; */
+//       /* margin: 5rem 0; */
+
+//       white-space: nowrap;
+//       will-change: transform;
+//       animation: left 16s linear infinite; /* Adjust duration to change the speed */
+//     }
+
+//     .right {
+//       /* padding: 2rem 0; */
+
+//       position: absolute;
+//       white-space: nowrap;
+//       will-change: transform;
+//       animation: right 16s linear infinite; /* Adjust duration to change the speed */
+//     }
+//   }
+//   .marquee2 {
+//     position: relative;
+//     width: 100vw;
+//     max-width: 100%;
+//     height: 190px;
+//     overflow-x: hidden;
+//     .left {
+//       position: absolute;
+//       white-space: nowrap;
+//       will-change: transform;
+//       animation: left 16s linear infinite; /* Adjust duration to change the speed */
+//     }
+
+//     .right {
+//       position: absolute;
+//       white-space: nowrap;
+//       will-change: transform;
+//       animation: right 16s linear infinite; /* Adjust duration to change the speed */
+//     }
+//   }
+// .right{
+//   margin: 7rem 0;
+// }
+//   @keyframes left {
+//     0% { transform: translateX(0); }
+//     100% { transform: translateX(-50%); } /* Adjust percentage to control spacing between repetitions */
+//   }
+
+//   @keyframes right {
+//     0% { transform: translateX(-50%); }
+//     100% { transform: translateX(0%); } /* Adjust percentage to control spacing between repetitions */
+//   }
+
+.client-section {
+  padding: 3rem 0;
+}
+.marquee-background {
+  position: absolute;
+  top: 17%;
+  left: 0%;
+  background: radial-gradient(
+    50% 75% at 50% 50%,
+    rgba(255, 255, 255, 0) 0%,
+    #fff 100%
+  );
+  width: 100%;
+  z-index: 1;
+  height: 438px;
+  padding: 2rem;
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+// clinets-section
+// .clients-section{
+.content {
+  img {
+    padding: 1rem 0 0;
+    margin: 1rem 0 0;
+  }
+}
+
+/* .track-1{
+  margin: 4rem 0;
+} */
+.track-2 {
+  margin: 10rem 0;
+}
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 400px;
+  overflow-x: hidden;
+}
+
+.left {
+  position: absolute;
+  /* padding: 2rem 0; */
+  /* margin: 5rem 0; */
+
+  white-space: nowrap;
+  will-change: transform;
+  animation: left 25s linear infinite; /* Adjust duration to change the speed */
+}
+
+.right {
+  /* padding: 2rem 0; */
+
+  margin: 5rem 0;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: right 25s linear infinite; /* Adjust duration to change the speed */
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60%);
+  } /* Adjust percentage to control spacing between repetitions */
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  } /* Adjust percentage to control spacing between repetitions */
+}
+
+.modern-development {
+  .modern-development-item {
+    p {
+      color: #a1accd;
+      padding: 20px 0 100px;
+    }
+  }
+  .modern-development-box {
+    border-radius: 20px;
+    background: #26d287;
+    margin-bottom: 40px;
+    height: 200px;
+    padding: 25px 20px;
+    h3 {
+      margin: 0 0 0 3rem;
+      color: #fff;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .contact-btn {
+      color: #26d287;
+      display: inline-flex;
+      padding: 14px 50px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 50px;
+      background: #fff;
+    }
+  }
+}

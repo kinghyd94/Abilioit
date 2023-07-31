@@ -1,0 +1,154 @@
+<!-- <owl-carousel-o [options]="carouselOptions" class="owl-theme">
+  <ng-container *ngFor="let item of slidesStore">
+    <ng-container *owlCarouselItem>
+      <div class="slide">
+        <img src="{{ item.cardImg }}" alt="" class="carousel-image">
+        <div class="carousel-content">
+          <h5 class="carousel-title">{{ item.cardTitle }}</h5>
+          <p class="carousel-text">{{ item.cardText }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</owl-carousel-o> -->
+
+<section class="blog-section">
+  <div class="container">
+    <div class="blog-title text-center">
+      <h1>Explore Blogs</h1>
+      <p>
+        Welcome to Abilio blog, where we explore topics relevant to building a
+        successful company. In today's article, we delve into the importance of
+        cultivating a strong company culture and highlight key principles that
+        can contribute to your organization's success.
+      </p>
+    </div>
+    <!-- Photo Grid -->
+    <!-- <div class="Photo-blog">
+      <div class="container">
+        <h2 class="title">Responsive Photo Gallery</h2>
+        <div class="photo-gallery row-cols-3">
+           <div class="col" *ngFor="let item of photoGalleryData">
+             <div class="photo">
+                <a>
+                  <img src="{{item.col1.imgSrc}}" alt="">
+                  <h4>{{item.col1.title}}</h4>
+                    <span>{{item.col1.date}}</span>
+                </a>
+             </div>
+             <div class="photo">
+               <a >
+                <img src="{{item.col2.imgSrc}}" alt="">
+                <h4>{{item.col2.title}}</h4>
+                    <span>{{item.col2.date}}</span>
+               </a>
+             </div>
+             <div class="photo">
+              <a >
+                <img src="{{item.col3.imgSrc}}" alt="">
+
+                <h4>{{item.col3.title}}</h4>
+                <span>{{item.col3.date}}</span>
+              </a>
+             </div>
+           </div>
+
+           <!-- <div class="col">
+             <div class="photo">
+               <a >
+                <img src="../../../../assets/images/blog/blog-img-4.svg" alt="">
+                <h4>Reach Your Marketing Goals
+                  Faster With Us</h4>
+                  <span>April 5, 2023</span>
+               </a>
+             </div>
+             <div class="photo">
+                <a >
+                  <img src="../../../../assets/images/blog/blog-img-5.svg" alt="">
+                  <h4>Reach Your Marketing Goals
+                    Faster With Us</h4>
+                    <span>April 5, 2023</span>
+                </a>
+             </div>
+             <div class="photo">
+               <a >
+                <img src="../../../../assets/images/blog/blog-img-6.svg" alt="">
+                <h4>Reach Your Marketing Goals
+                  Faster With Us</h4>
+                  <span>April 5, 2023</span>
+               </a>
+             </div>
+           </div>
+           <div class="col">
+             <div class="photo">
+               <a >
+                <img src="../../../../assets/images/blog/blog-img-7.svg" alt="">
+                <h4>Reach Your Marketing Goals
+                  Faster With Us</h4>
+                  <span>April 5, 2023</span>
+               </a>
+             </div>
+             <div class="photo">
+               <a >
+                <img src="../../../../assets/images/blog/blog-img-8.svg" alt="">
+                <h4>Reach Your Marketing Goals
+                  Faster With Us</h4>
+                  <span>April 5, 2023</span>
+               </a>
+             </div>
+             <div class="photo">
+                <a >
+                  <img src="../../../../assets/images/blog/blog-img-9.svg" alt="">
+                  <h4>Reach Your Marketing Goals
+                    Faster With Us</h4>
+                    <p>April 5, 2023</p>
+                </a>
+             </div>
+           </div> --
+        </div>
+        <pagination-controls (pageChange)="handlePageChange($event)" (previousPage)="onPreviousPage()" (nextPage)="onNextPage()"
+        previousLabel="Previous" nextLabel="Next"></pagination-controls>
+      </div>
+    </div> -->
+    <div class="Photo-blog">
+      <div class="container">
+        <!-- <h2 class="title">Responsive Photo Gallery</h2> -->
+        <div class="photo-gallery row-cols-3">
+          <div class="col" *ngFor="let item of paginatedPhotoGalleryData">
+            <div class="photo">
+              <a>
+                <img [src]="item.col1.imgSrc" alt="">
+                <h4>{{ item.col1.title }}</h4>
+                <span>{{ item.col1.date }}</span>
+              </a>
+            </div>
+            <div class="photo">
+              <a>
+                <img [src]="item.col2.imgSrc" alt="">
+                <h4>{{ item.col2.title }}</h4>
+                <span>{{ item.col2.date }}</span>
+              </a>
+            </div>
+            <div class="photo">
+              <a>
+                <img [src]="item.col3.imgSrc" alt="">
+                <h4>{{ item.col3.title }}</h4>
+                <span>{{ item.col3.date }}</span>
+              </a>
+            </div>
+            <!-- <div class="photo">
+              <a>
+                <img [src]="item.col4.imgSrc" alt="">
+                <h4>{{ item.col4.title }}</h4>
+                <span>{{ item.col3.date }}</span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+        <pagination-controls (pageChange)="handlePageChange($event)" (previousPage)="onPreviousPage()"
+          (nextPage)="onNextPage()" previousLabel="Previous" nextLabel="Next"></pagination-controls>
+      </div>
+    </div>
+
+  </div>
+</section>

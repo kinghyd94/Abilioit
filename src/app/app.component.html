@@ -1,0 +1,14 @@
+
+<app-cursor></app-cursor>
+<!-- Your other website content goes here -->
+<ng-container *ngIf="showNavAndFooter">
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</ng-container>
+
+<ng-container *ngIf="!showNavAndFooter">
+  <!-- Page Not Found content -->
+  <app-page-not-found></app-page-not-found>
+</ng-container>
+

@@ -1,0 +1,93 @@
+<section class="contact-section">
+  <div class="container">
+    <div class="d-flex contact-card" >
+      <div class="col row-border">
+        <div class="contact-item-1">
+          <h2>
+            Get in touch <br />
+            with us today
+          </h2>
+          <p>
+            We collaborate with thousands of creators, <br />
+            entrepreneurs and complete legends.
+          </p>
+        </div>
+        <div class="contact-item-2">
+          <div class="row">
+            <div class="d-flex contact-links justify-contect-center  ">
+              <img src="../../../../assets/images/contact/email.svg" alt="as" />
+              <span>
+                <h5>Send us an Email</h5>
+                <a href="">info@abilioit.com</a>
+              </span>
+            </div>
+            <div class="d-flex contact-links justify-contect-center broder-0 m-0 p-0">
+              <img src="../../../../assets/images/contact/phone.svg" alt="as" />
+              <span>
+                <h5>Give us a Call</h5>
+                <a href="">404-40050678</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="contact-form">
+          <form #contactForm="ngForm" (ngSubmit)="submit(contactForm.value)">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                      <div class="form-group mb-4">
+                        <input required minlength="3" maxlength="50" ngModel name="name" type="text" #name="ngModel" class="form-control" id="name" placeholder="Full name">
+                        <div class="alert alert-danger" *ngIf="name.touched && name.errors">
+                            <div *ngIf="name.errors['required']">Name is required.</div>
+                            <div *ngIf="name.errors['minlength']">Name is minimum {{ name.errors['minlength']['requiredLength'] }} characters.</div>
+                            <div *ngIf="name.errors['maxlength']">Name is maximum 50 characters.</div>
+                        </div>
+
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                      <div class="form-group mb-4">
+                          <input required ngModel name="email" type="text" #email="ngModel" class="form-control" id="email" placeholder="Email">
+                          <div class="alert alert-danger" *ngIf="email.touched && !email.valid">Email Address is required.</div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6">
+                      <div class="form-group mb-4">
+                          <input required ngModel name="number" type="text" #number="ngModel" class="form-control" id="number" placeholder="Mobile Number">
+                          <div class="alert alert-danger" *ngIf="number.touched && !number.valid">Phone number is required.</div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="form-group mb-4">
+                      <select
+                      id="mySelectId"
+                      class="form-select"
+                      name="Service"
+                    >
+                      <option value="" disabled selected>Service</option>
+                      <option value="API">API</option>
+                      <option value="Pellets">Pellets</option>
+                      <option value="Intermediates">Intermediates</option>
+                    </select>
+                    </div>
+                </div>
+                  <div class="col-lg-12 col-md-12">
+                      <div class="form-group mb-4">
+                          <textarea required ngModel #message="ngModel" name="message" id="message" cols="30" rows="6" class="form-control" placeholder="Tell us about your words here.."></textarea>
+                          <div class="alert alert-danger" *ngIf="message.touched && !message.valid">Message is required.</div>
+                      </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                      <button type="submit" class="btn submit-btn" [class.disabled]="!contactForm.valid">Send Message</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-assistance></app-assistance>
+<!-- <app-assistance [sliderData]="sliderData"></app-assistance> -->

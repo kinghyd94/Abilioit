@@ -1,0 +1,92 @@
+// // @import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+// // @import url(https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css);
+// // @import url(https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js);
+// body {
+//   font-family: sans-serif;
+//   text-align: center;
+// }
+// :host {
+//   display: block;
+// }
+
+// body {
+//   background-color: #d9ddef;
+// }
+
+// .carousel {
+//   height: 600px;
+//   perspective: 250px;
+// }
+
+// .carousel .carousel-item {
+//   width: 450px;
+// }
+
+// .carousel .indicators .indicators-item {
+//   background-color: red;
+// }
+
+// .img {
+//   width: 75px;
+//   height: 75px;
+//   border-radius: 50px;
+//   overflow: hidden;
+//   display: inline-block;
+//   margin: 0 auto;
+// }
+
+// .img img {
+//   width: 100%;
+// }
+
+// .content {
+//   background-color: #fafafa;
+//   text-align: center;
+//   height: 347px;
+//   box-shadow: 0 15px 20px 5px rgba(0, 0, 0, 0.5);
+//   padding: 35px;
+//   border-radius: 25px;
+//   color: rgba(0, 0, 0, 0.5);
+//   position: relative;
+//   z-index: 1;
+// }
+
+// .content::before {
+//   content: '';
+//   position: absolute;
+//   width: 100px;
+//   height: 115px;
+//   background-color: red;
+//   top: 0;
+//   left: 39%;
+//   z-index: -1;
+//   border-radius: 0 0 50px 50px;
+// }
+
+// .content h1 {
+//   font-size: 40px;
+//   font-family: Arial, Helvetica, sans-serif;
+//   margin: 15px 0 0;
+//   color: red;
+// }
+
+// .content h2 {
+//   margin: 10px 0 0;
+//   font-size: 16px;
+//   text-transform: uppercase;
+//   letter-spacing: 3px;
+// }
+
+// .socials i {
+//   font-size: 25px;
+// }
+
+h3{
+  color: #151F2D;
+text-align: center;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
